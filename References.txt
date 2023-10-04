@@ -3,3 +3,8 @@ https://huggingface.co/blog/speecht5
 https://huggingface.co/docs/transformers/main/model_doc/speecht5
 
 https://github.com/microsoft/SpeechT5
+
+
+
+Possible extra features
+https://elevenlabs.io/speech-synthesis
