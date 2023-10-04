@@ -8,3 +8,7 @@ https://github.com/microsoft/SpeechT5
 
 Possible extra features
 https://elevenlabs.io/speech-synthesis
+
+
+Frontend framework for Web App
+Django
