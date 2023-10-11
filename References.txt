@@ -1,17 +1,18 @@
+Modules and documentations
 https://huggingface.co/blog/speecht5
 
 https://huggingface.co/docs/transformers/main/model_doc/speecht5
 
 https://github.com/microsoft/SpeechT5
 
-
+Demo app 
+https://huggingface.co/spaces/Matthijs/speecht5-tts-demo/blob/main/app.py
 
 Possible extra features
 https://elevenlabs.io/speech-synthesis
 
+How to fine tune the SpeechT5 for multilingual TTS
+https://colab.research.google.com/drive/1i7I5pzBcU3WDFarDnzweIj4-sVVoIUFJ
 
 Frontend framework for Web App
 Django
-
-
-https://huggingface.co/spaces/Matthijs/speecht5-tts-demo/blob/main/app.py
