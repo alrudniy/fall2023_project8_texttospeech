@@ -7,3 +7,4 @@ pip install google-cloud-language
 Authentication
 https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-texttospeech
 https://cloud.google.com/docs/authentication/provide-credentials-adc
+https://cloud.google.com/docs/authentication/client-libraries
