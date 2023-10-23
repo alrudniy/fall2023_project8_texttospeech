@@ -14,7 +14,14 @@ https://elevenlabs.io/speech-synthesis
 How to fine tune the SpeechT5 for multilingual TTS
 https://colab.research.google.com/drive/1i7I5pzBcU3WDFarDnzweIj4-sVVoIUFJ
 
+
+START HERE !!!
+
 Frontend framework for Web App
 Django
 
-We are going to use Django instead of Gradio for the UI
+text box / text file input 
+accepted file extensions: .doc, .docx, .odt, .pdf, .rtf, .text, .txt, .wpd
+
+Google Text to SpeechT
+https://cloud.google.com/text-to-speech/docs/samples

@@ -1,13 +1,5 @@
-title: SpeechT5 Speech Synthesis Demo
-emoji: 👩‍🎤
-colorFrom: yellow
-colorTo: blue
-sdk: gradio
-sdk_version: 3.17.0
-app_file: app.py
-pinned: false
-license: apache-2.0
+Install python client library
+pip install --upgrade google-cloud-texttospeech
 
-
-<!-- Configuration reference -->
-<!-- https://huggingface.co/docs/hub/spaces-config-reference -->
+Install python natural language library
+pip install google-cloud-language
