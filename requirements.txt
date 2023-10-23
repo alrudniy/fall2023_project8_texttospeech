@@ -1,4 +1,0 @@
-flask
-SQLAlchemy
-flask_sqlalchemy
-flask-mysqldb
