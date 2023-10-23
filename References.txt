@@ -25,3 +25,9 @@ accepted file extensions: .doc, .docx, .odt, .pdf, .rtf, .text, .txt, .wpd
 
 Google Text to SpeechT
 https://cloud.google.com/text-to-speech/docs/samples
+
+Sample usage
+https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/texttospeech/snippets
+
+Main gTTS git repo
+https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-texttospeech
