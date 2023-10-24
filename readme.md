@@ -12,3 +12,4 @@ https://cloud.google.com/docs/authentication/client-libraries
 
 Using gcloud text-to-speech
 https://codelabs.developers.google.com/codelabs/cloud-text-speech-python3#0
+https://www.pluralsight.com/cloud-guru/labs/gcp/setting-up-google-cloud-text-to-speech
