@@ -8,3 +8,7 @@ Authentication
 https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-texttospeech
 https://cloud.google.com/docs/authentication/provide-credentials-adc
 https://cloud.google.com/docs/authentication/client-libraries
+
+
+Using gcloud text-to-speech
+https://codelabs.developers.google.com/codelabs/cloud-text-speech-python3#0
