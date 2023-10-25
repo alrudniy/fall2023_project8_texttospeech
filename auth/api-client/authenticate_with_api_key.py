@@ -13,6 +13,9 @@ def authenticate_with_api_key(quota_project_id: str, api_key_string: str) -> Non
         api_key_string: The API key to authenticate to the service.
     """
 
+    quota_project_id = "text-to-speech-403017"
+    api_key_string = "1//011zmC8iCHcTLCgYIARAAGAESNwF-L9IrizotsQdIQZtgMAKCWXIsxv6FZQ1DZCiHwN-vUhIuGC5IN8KgR69vM4uUciiYExFjpeE"
+
     # Initialize the Language Service client and set the API key and the quota project id.
     client = language_v1.LanguageServiceClient(
         client_options={"api_key": api_key_string, "quota_project_id": quota_project_id}
