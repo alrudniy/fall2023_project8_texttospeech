@@ -9,6 +9,8 @@ https://github.com/googleapis/google-cloud-python/tree/main/packages/google-clou
 https://cloud.google.com/docs/authentication/provide-credentials-adc
 https://cloud.google.com/docs/authentication/client-libraries
 
+use gcloud auth application-default on powershell
+
 
 Using gcloud text-to-speech
 https://codelabs.developers.google.com/codelabs/cloud-text-speech-python3#0
