@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Authentication</title>
+    <meta name ="description" content = "">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "">
+    <style>
+        #mainCanvas{
+                width: 100%;
+                height: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                float: right;
+                background-color: rgb(146, 110, 243);
+        }
+        #myCanvas{
+            height: 300px;
+            text-align: left;
+            align-self: auto;
+            width: 40%;
+            border: 5px solid #868686;
+            border-radius: 5px;
+            margin: 30px 0;
+            outline: none;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+        #input[type=text]
+        {
+            height: 300px;
+            text-align: left;
+            align-self: auto;
+            width: 40%;
+            border: 5px solid #868686;
+            border-radius: 5px;
+            margin: 30px 0;
+            outline: none;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+    {% csrf_token %}
+    <h3>Main Application</h3>
+    <form action="/mainapp" method="post">
+    
+        
+        <canvas id="mainCanvas"></canvas>
+        <br>
+        <button type="menu">Select Language v</button>
+        <button type="menu">Select Voice Speed v</button>
+        <button type="menu">Select  v</button><br>
+        
+        <label for="">Input:</label>
+        <label for="">Output:</label><br>
+        <textarea type="text" id="input" name="input" placeholder="Enter input (text of voice)" required></textarea>
+
+        <canvas id="myCanvas">Output goes out here</canvas>
+        
+        <button type="submit">Use Voice</button>
+        <br>
+        <button type="submit">Submit</button>
+        <br><br>
+
+        <button type="submit">Upload...</button>
+        <button type="submit"><a href="/history">History</a></button>
+        <button type="submit">Save As...</button>
+    </form>
+
+</body>
+</html>
