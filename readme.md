@@ -1,5 +1,6 @@
-Username: kmon;
-Password: Project8;
+Username: kmon
+
+Password: Project8
 
 
 Functions between pages
