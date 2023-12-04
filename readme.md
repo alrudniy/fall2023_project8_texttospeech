@@ -21,3 +21,8 @@ https://pypi.org/project/google-cloud-texttospeech/
 Using playsound
 pip install wheel setuptools pip --upgrade
 pip install playsound
+
+
+
+TO INSTALL ALL DEPENDENCIES WITH THE requirements.txt FILE
+pip install -r requirements.txt
