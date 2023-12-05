@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>History</title>
+    <meta name ="description" content = "">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "">
+    <style>
+        #myCanvas{
+            height: 300px;
+            text-align: left;
+            align-self: auto;
+            width: 40%;
+            border: 5px solid #868686;
+            border-radius: 5px;
+            margin: 30px 0;
+            outline: none;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h3>History</h3>
+    <form action="/history" method="post">
+    {% csrf_token %}
+        <label for="hint">Your past requests will be displayed here:</label><br><br>
+        <canvas id="myCanvas">Output goes out here</canvas>
+        <button type="submit"><a href="/mainapp">Return</a></button>
+    </form>
+</body>
+</html>

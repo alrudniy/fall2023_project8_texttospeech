@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <meta name ="description" content = "">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "">
+    
+</head>
+<body>
+    
+    <h3>My Profile</h3>
+    <form action="/profile" method="post">
+    {% csrf_token %}
+        <h3>Hello {{firstname}} {{lastname}} First name Last name</h3><br>
+        <h3>Your e-mail is {{email}}</h3>
+        <button type="submit"><a href="/mainapp">Return</a></button>
+    </form>
+</body>
+</html>
