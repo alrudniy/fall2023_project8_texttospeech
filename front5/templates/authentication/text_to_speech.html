@@ -9,16 +9,26 @@
     <link rel="stylesheet" href = "">
 </head>
 <body>
-    <h3>Sign In</h3>
-    <form action="/signin" method="post">
     {% csrf_token %}
-    
-        <label for="">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
-        <br>
-        <label for="">Password:</label>
-        <input type="password" id="pass1" name="pass1" placeholder="Enter your password" required>
-        <br>
+    <h3>TTS</h3>
+    <form action="/mainapp" method="post">
+    {% csrf_token %}
+    <canvas id="mainCanvas"></canvas>
+    <br>
+    <button type="menu">Select Language v</button>
+    <button type="menu">Select Voice Speed v</button>
+    <button type="menu">Select  v</button><br>
+    <label for="">Input:</label>
+    <label for="">Output:</label><br>
+    <textarea type="text" id="user_input" name="user_input" placeholder="Enter input (text of voice)" required></textarea>
+    <canvas id="myCanvas">Output goes out here</canvas>
+    <button type="submit">Use Voice</button>
+    <br>
+    <button type="submit"><a href="/text_to_speech"></a></button>
+    <br><br>
+    <button type="submit">Upload...</button>
+    <button type="submit"><a href="/history">History</a></button>
+    <button type="submit">Save As...</button>
 
         <button type="submit">Sign In</button>
     </form>

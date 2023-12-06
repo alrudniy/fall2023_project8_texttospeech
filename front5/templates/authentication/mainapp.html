@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Authentication</title>
+    <title>TTS</title>
     <meta name ="description" content = "">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "">
@@ -50,28 +50,51 @@
     {% csrf_token %}
     <h3>Main Application</h3>
     <form action="/mainapp" method="post">
+        {% csrf_token %}
     
-        
+        <button type="submit"><a href="/profile">Profile</a></button>
         <canvas id="mainCanvas"></canvas>
+        <br><br>
+        
+        <label for="menu">Choose Language:</label> 
+        <select name="Languages" id="Languages "> 
+            <option value="op1">English</option> 
+            <option value="op2">Option2</option> 
+            <option value="op3">Option3</option>
+        </select>
         <br>
-        <button type="menu">Select Language v</button>
-        <button type="menu">Select Voice Speed v</button>
-        <button type="menu">Select  v</button><br>
+      
+        <label for="menu">Choose Speaker:</label> 
+        <select name="Languages" id="Languages "> 
+            <option value="op1">Option1</option> 
+            <option value="op2">Option2</option> 
+            <option value="op3">Option3</option>
+        </select>
+        <br>
+        
+        <label for="menu">Choose Speed:</label> 
+        <select name="Languages" id="Languages "> 
+            <option value="op1">Option1</option> 
+            <option value="op2">Option2</option> 
+            <option value="op3">Option3</option>
+        </select>
+        <br><br>
         
         <label for="">Input:</label>
         <label for="">Output:</label><br>
-        <textarea type="text" id="input" name="input" placeholder="Enter input (text of voice)" required></textarea>
+        <textarea type="text" id="input" name="input" placeholder="Enter input (text or voice)" required></textarea>
 
         <canvas id="myCanvas">Output goes out here</canvas>
         
         <button type="submit">Use Voice</button>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit"><a href="/text_to_speech">Submit</a></button>
         <br><br>
 
         <button type="submit">Upload...</button>
         <button type="submit"><a href="/history">History</a></button>
         <button type="submit">Save As...</button>
+        
     </form>
 
 </body>

@@ -56,14 +56,20 @@ def mainapp(request):
 def history(request):
     return render(request, 'authentication/history.html')
 
-# To be included in Django with the directory myapp/views.py
-"""
-from django.http import HttpResponse
-from django.shortcuts import render
-import os
+def profile(request):
+    return render(request, 'authentication/profile.html')
 
+# To be included in Django with the directory myapp/views.py
+
+
+#from django.http import HttpResponse
+#from django.shortcuts import render
+import os
+import json
+from django.http import JsonResponse
 from google.cloud import texttospeech
 from playsound import playsound
+from datetime import datetime
 
 def text_to_speech(request):
     
@@ -93,8 +99,12 @@ def text_to_speech(request):
         audio_config=audio_config
     )
 
+    date_string = datetime.now().strftime("%d%m%Y%H%M%S")
+    filename = "output_" + date_string + ".mp3"
+    mp3_file_path = os.path.join(filename)
+
     # The response's audio_content is binary.
-    mp3_file_path = os.path.join('media', 'output.mp3')
+    #mp3_file_path = os.path.join('media', 'output.mp3')
     with open(mp3_file_path, "wb") as out:
         # Write the response to the output file.
         out.write(response.audio_content)
@@ -102,6 +112,5 @@ def text_to_speech(request):
     # Play the sound
     playsound(mp3_file_path)
 
-    return HttpResponse('Text-to-speech completed.')
-
-"""
+    #return HttpResponse('Text-to-speech completed.')
+    return render(request, 'authentication/mainapp.html')
